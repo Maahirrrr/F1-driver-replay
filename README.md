@@ -42,8 +42,8 @@ The system displays:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/f1-driver-tracker.git
-cd f1-driver-tracker
+git clone https://github.com/Maahirrrr/F1-driver-replay.git
+cd F1-driver-replay
 ```
 
 2. Install required dependencies:
@@ -94,24 +94,24 @@ FPS = 90             # Animation frames per second
 ## 🏗️ Project Structure
 
 ```
-f1-driver-tracker/
+f1-driver-replay/
 │
 ├── f1_driver_tracker.py    # Main application file
-├── requirements.txt         # Python dependencies
-├── README.md               # Project documentation
-├── LICENSE                 # MIT License
-├── .gitignore             # Git ignore rules
-└── cache/                 # FastF1 data cache (auto-created)
+├── requirements.txt        # Python dependencies
+├── README.md              # Project documentation
+├── LICENSE                # MIT License
+├── .gitignore            # Git ignore rules
+└── cache/                # FastF1 data cache (auto-created)
 ```
 
 ## 🔧 Technical Details
 
 ### Data Processing
 
-1. **Session Loading**: Fetches telemetry data using FastF1 API
-2. **Lap Selection**: Identifies fastest lap for each driver
-3. **Synchronization**: Interpolates all drivers to a common timeline
-4. **Pre-computation**: Calculates cumulative distances for performance optimization
+- **Session Loading**: Fetches telemetry data using FastF1 API
+- **Lap Selection**: Identifies fastest lap for each driver
+- **Synchronization**: Interpolates all drivers to a common timeline
+- **Pre-computation**: Calculates cumulative distances for performance optimization
 
 ### Performance Optimizations
 
@@ -151,6 +151,7 @@ SESSION = 'Q'
 ## 🐛 Troubleshooting
 
 ### Cache Issues
+
 If you encounter data loading problems:
 ```bash
 # Delete the cache folder
@@ -158,12 +159,14 @@ rm -rf cache/
 ```
 
 ### Memory Issues
+
 For longer sessions or many drivers:
 - Reduce `NUM_DRIVERS`
 - Lower `FPS` to 60 or 30
 - Close other applications
 
 ### Missing Data
+
 Some sessions may not have complete telemetry data. Try:
 - Different sessions from the same race weekend
 - More recent races (better data quality)
@@ -184,18 +187,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [FastF1](https://github.com/theOehrly/Fast-F1) - For providing the excellent F1 data API
-- Formula 1® - For the incredible sport and data
-- The F1 community - For inspiration and support
+- **FastF1** - For providing the excellent F1 data API
+- **Formula 1®** - For the incredible sport and data
+- **The F1 community** - For inspiration and support
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+**Maahir Kadia** - AI/ML Student | [LinkedIn](https://linkedin.com/in/maahir-kadia) | [GitHub](https://github.com/Maahirrrr)
 
-Project Link: [https://github.com/yourusername/f1-driver-tracker](https://github.com/yourusername/f1-driver-tracker)
+Project Link: [https://github.com/Maahirrrr/F1-driver-replay](https://github.com/Maahirrrr/F1-driver-replay)
 
 ---
 
-⭐ If you found this project helpful, please consider giving it a star!
+⭐ **If you found this project helpful, please consider giving it a star!**
 
-**Note**: This project is for educational purposes. All F1 data is provided by FastF1 and is subject to their terms of use.
+---
+
+*Note: This project is for educational purposes. All F1 data is provided by FastF1 and is subject to their terms of use.*
